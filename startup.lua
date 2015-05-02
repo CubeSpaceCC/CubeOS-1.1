@@ -1,0 +1,8 @@
+term.clear()
+term.setCursorPos(1,1)
+print("Loading CubeCore Alpha v1")
+sleep(2)
+printError("WARNING: CODE IS UNSTABLE!")
+printError("NOTE: WORK IN PROGRESS!")
+sleep(3)
+shell.run("/.programs/Desktop")
