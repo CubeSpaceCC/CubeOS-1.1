@@ -11,6 +11,11 @@ term.setTextColor(colors.green)
 write(">")
 term.setTextColor(colors.blue)
 write(" Basic Editor")
+term.setCursorPos(1,1)
+term.setTextColor(colors.green)
+write(">")
+term.setTextColor(colors.blue)
+write(" Turtle Control")
 
 local evt, x, y = os.pullEvent('mouse_click')
 
@@ -22,6 +27,8 @@ term.setCursorPos(1,1)
 write("File Path: /")
 path = read()
 shell.run("edit /"..path)
+elseif x == 1 and y == 7 then
+shell.run("/.programs/Controller")
 else
 shell.run("/.programs/Desktop")
 end
